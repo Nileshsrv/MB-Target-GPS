@@ -36,13 +36,19 @@ $$\text{North Offset} = d \cdot \cos(\psi)$$
 $$\text{East Offset} = d \cdot \sin(\psi)$$
 
 ### 1.3 Target Coordinate Geodesic Projection
-Using the WGS-84 Earth equatorial radius $R = 6,378,137.0\text{ m}$:
-- The angular latitude shift $\Delta\text{Lat}$ (in degrees) is:
+
+Using the WGS-84 Earth equatorial radius **$R = 6{,}378{,}137.0\ \text{m}$**:
+
+- The angular latitude shift **$\Delta\text{Lat}$** (in degrees) is:
+
   $$\Delta\text{Lat} = \left(\frac{\text{North Offset}}{R}\right) \times \left(\frac{180}{\pi}\right)$$
-- The angular longitude shift $\Delta\text{Lon}$ (in degrees) scales with the parallel circumference at the observer's latitude $\text{current\_lat}$:
+
+- The angular longitude shift **$\Delta\text{Lon}$** (in degrees) scales with the parallel circumference at the observer's latitude `current_lat`:
+
   $$\Delta\text{Lon} = \left(\frac{\text{East Offset}}{R \cdot \cos(\text{current\_lat})}\right) \times \left(\frac{180}{\pi}\right)$$
 
 Final estimated target coordinates:
+
 $$\text{target\_lat} = \text{current\_lat} + \Delta\text{Lat}$$
 $$\text{target\_lon} = \text{current\_lon} + \Delta\text{Lon}$$
 
