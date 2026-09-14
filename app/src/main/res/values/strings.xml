@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Target GPS Estimator</string>
+    <string name="camera_height_hint">Camera Height (m, e.g. 1.5)</string>
+    <string name="calculate_target">CALCULATE TARGET</string>
+    <string name="save_test_data">SAVE TEST DATA</string>
+    <string name="current_gps_title">Current Position &amp; Heading</string>
+    <string name="target_estimation_title">Target Estimation</string>
+    <string name="not_available">N/A</string>
+</resources>
